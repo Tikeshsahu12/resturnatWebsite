@@ -1,0 +1,42 @@
+@media only screen and (min-width:200px) and (max-width:600px) {
+    .nav-list li {
+        display: none;
+    }
+
+    .nav-list i {
+        display: block;
+        font-size: 3.5vw;
+    }
+    .container h1 {
+        font-size: 5vw;
+    }
+    .hero {
+        margin-bottom: 40px;
+    }
+    .hero-section h2 {
+        font-size: 6vw;
+    }
+
+    .hero-section p {
+        font-size: 3.5vw;
+    }
+
+    .search-box input {
+        padding-right: 60px;
+    }
+    .recipe-section {
+        flex-direction: column;
+    }
+    .receipe-cart {
+        padding-bottom: 30px;
+    }
+    .receipe-cart {
+        width: 90%;
+        margin: auto;
+    }
+
+    .receipe-cart img {
+        width: 100%;
+        height: 250px;
+    }
+}
