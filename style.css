@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-li {
-    list-style: none;
-    cursor: pointer;
-}
 body {
     width: 100%;
     min-height: 100vh;
@@ -28,6 +24,14 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+.nav-list li {
+    list-style: none;
+    cursor: pointer;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
 }
 .logo {
     cursor: pointer;
@@ -74,9 +78,14 @@ header {
     padding: 7px 150px 7px 10px;
     border: none;
     font-size: 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 .search-box input:focus {
     outline: none;
+}
+.search-box input::placeholder {
+    color: blue;
 }
 .search-box button {
     border: none;
@@ -133,6 +142,26 @@ header {
     border-radius: 0 0 10px 10px;
     cursor: pointer;
 }
+button {
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+}
+button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    left: 100%;
+    top: 0;
+    transition: all ease-in 0.9s;
+    z-index: -1;
+}
+button:hover::after {
+    left: 0;
+}
+
 
 /* footer */
 .footer {
